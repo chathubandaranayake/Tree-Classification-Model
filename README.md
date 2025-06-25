@@ -1,45 +1,44 @@
-🌳 Tree Classification using Neural Networks
+# 🌳 Tree Classification using Neural Networks
+
 This project demonstrates how to build a neural network using TensorFlow/Keras to classify tree species based on a dataset. It covers the full machine learning pipeline from data loading and preprocessing to model training, evaluation, and saving.
 
-📁 Dataset
-The dataset used is Tree_Dataset.csv, which contains features related to tree species.
+---
 
-🔧 Technologies Used
-Python
+## 📁 Dataset
 
-TensorFlow / Keras
+The dataset used is `Tree_Dataset.csv`, which contains features related to tree species.
 
-Pandas
+---
 
-NumPy
+## 🔧 Technologies Used
 
-Scikit-learn
+- Python
+- TensorFlow / Keras
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
 
-Matplotlib
+---
 
-📌 Key Steps
-Data Loading
-The dataset is read using Pandas and basic exploration is done (info(), describe()).
+## 📌 Key Steps
 
-Preprocessing
+1. **Data Loading**  
+   The dataset is read using Pandas and basic exploration is done (`info()`, `describe()`).
 
-Features are standardized using StandardScaler.
+2. **Preprocessing**  
+   - Features are standardized using `StandardScaler`.  
+   - Labels are one-hot encoded for classification.
 
-Labels are one-hot encoded for classification.
+3. **Model Building**  
+   - A sequential neural network with Dense layers is created.  
+   - Early stopping and model checkpointing are used to optimize training.
 
-Model Building
+4. **Training & Evaluation**  
+   - The model is trained and evaluated on test data.  
+   - Accuracy and loss curves are plotted.
 
-A sequential neural network with Dense layers is created.
+5. **Model Saving**  
+   - Trained model is saved for future inference.
 
-Early stopping and model checkpointing are used to optimize training.
-
-Training & Evaluation
-
-The model is trained and evaluated on test data.
-
-Accuracy and loss curves are plotted.
-
-Model Saving
-
-Trained model is saved for future inference.
-
+---
